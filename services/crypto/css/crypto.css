@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat";
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu{
+        width: 50%;
+    }
+    .dropdown-menu .dropdown-submenu{
+        width: auto;
+    }
+
+    .dropdown-menu{ left: -131%;}
+}
+.FirstSection{
+    /* height: 100vh; */
+    clip-path: ellipse(72% 68% at 58% 27%);
+    background-image: linear-gradient(to left top,#022a3b, #071d27);
+    height: 100vh;
+
+}
+
+body{
+    background-image: linear-gradient(to left top,#071d27,rgb(0, 0, 0));
+}
+
+#mainNav{
+    background-color: #040404b4;
+    color: #f8f5f5;
+    position: fixed;
+}
+#mainNav a{
+    text-decoration: none;
+    color: #f8f5f5;
+}
+
+.main-menubox {
+    display: none;
+   
+}
+
+.main-menu:hover .main-menubox{
+    display: block;
+    background-color: #070707;
+    color: #f8f5f5;
+}
+
+
+.dropdown-submenu{
+    position: relative;
+}
+.dropdown-submenu a::after{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3px;
+    
+    top: 40%;
+}
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    margin-top: -30px;
+    
+    left: 100%;
+}
+
+.dropdown-submenu a::after {
+    right: 16px;
+    top: 42%;
+    
+}
+
+.dropdown-item {
+    padding: 8px 18px;
+    color: #f8f5f5;
+}
+    .dropdown-item{white-space: normal}
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+    font-size: 14px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #070707;
+    text-decoration: none;
+    background-color: #373737;
+}
+
+  li.nav-item { 
+       padding: 10px 20px;
+    }
+  
+#Header_button{
+    border: none;
+    color: white;
+    background-color: #0e3a4f;
+    height: 35px;
+    align-items: center;
+    width: 130px;
+   
+}
+
+.Animatex-text span{
+    position: relative;
+}
+
+.Animatex-text span::before{
+    content: "Wallet";
+    color: rgb(64, 173, 223);
+    animation: words 20s infinite;
+}
+
+.Animatex-text span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: transparent;
+    border-left: 2px solid rgb(64, 173, 223);
+    right: -8px;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #071d27;
+    }
+}
+
+@keyframes words{
+    0%,20%{
+
+    }
+    0%,20%{
+        
+    }
+    0%,20%{
+        
+    }
+    0%,20%{
+        
+    }
+    0%,20%{
+        
+    }
+}
+
+
+/* ********Containt********* */
+.containt{
+    /* padding-top: 200px; */
+    height: auto;
+}
+.MainContentTitleInfo {
+    color: white;
+}
+.MainContentTitleInfo h1{
+    font-size: 70px;
+}
+.MainContentTitleInfo h2{
+    font-size: 45px;
+}
+.MainContentTitleInfo p{ 
+    font-size: 20px;
+}
+.MainGif{
+    width: 350px;
+}
+
+.information_AtBigWig{
+    padding-left: 60px;
+    padding-right: 60px;
+    color: white;
+}
+.Title {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+.information_AtBigWig p{
+    font-size: 21px;
+}
+
+.border{
+        width: 60px;
+        height: 2px;
+        background: #fbfcfa;
+        margin: 26px auto;
+    
+    }
+/* ********** new  ************** */
+.whatWeTokenize{
+    padding: 20px 30px;
+}
+.WhatWeTokenizeCards{
+    width: 600px;
+    background-color: #071d27;
+    padding: 10px;
+    border-radius: 30px;
+}
+#image_card{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    
+}
+.discription{
+    color: white;
+    width: 400px;
+}

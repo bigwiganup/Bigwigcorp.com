@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/BigWigLogo1.png" alt="logo" id="logo">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="images/menu-svgrepo-com.svg" alt="" height="30px" width="30px">
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Movies</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                        <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    
+                </ul>
+                <li class="nav-item" style="list-style: none;">
+                    <a href="Sign-In.html" style="text-decoration: none; "><button id="loginbtn">Sign in</button></a>
+                </li>
+              </div>
+            </div>
+          </nav>
+       
+    </header>
+    <section id="movieSection">
+        <div class="mainMovieContainer">
+            <img class="img-fluid" src="https://images6.alphacoders.com/111/1114212.jpg" alt="" id="mainMovieImg">
+            <div class="movies_logo">
+        <img src="images/strangerthingslogo.png" alt="" id="MoviesLogo">
+        <p style="color:#E8E5E5;font-family: sans-serif;">Season-4 | Drama | Fantacy | Horror | 2022</p>
+        <p>IMDB Rating : <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 8.7/10</p>
+        <p style="color:#E8E5E5;font-family: sans-serif;">&nbsp;&nbsp;&nbsp;When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+        <button id="TrailerButton"><i class="fa-solid fa-video"></i>&nbsp;Trailer</button>
+        <button id="TrailerButton"> Watch</button>
+
+    </div>
+        </div>
+        
+    </section><br><br><br>
+    <h2>Similar More Movies </h2>
+    <section id="Action">
+        
+        <div class="d-flex">
+            <!---------------Captain Miller card--------------- -->
+            <div class="moviecontainer">
+                <div class="CaptainMillerMovieContainer">
+                    <div class="CaptainMiller">
+                        <div id="CaptainMillerfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Captain Miller</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2024.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 6.7/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="CaptainMiller_info">
+                            <div class="bg">
+                                <p>A man leaves and turns against the British-led Indian military after witnessing
+                                    atrocity <a href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ---------------------Dune Part One card-------------------- -->
+            <div class="moviecontainer">
+                <div class="Dune-P1MovieContainer">
+                    <div class="DuneP1">
+                        <div id="DuneP1front">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Dune: Part One</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2021.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 8/10.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DuneP1_info">
+                            <div class="bg">77
+                                <p>
+                                    Noble family entangled in galaxy's war for vital asset; heir haunted by foreboding
+                                    visions of dark destiny <a href="#">Read More...</a></p>
+                                <br>7
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Mission Of Honor card--------------------- -->
+            <div class="moviecontainer">
+                <div class="MissionOfHonorMovieContainer">
+                    <div class="MissionOfHonor">
+                        <div id="MissionOfHonorfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Mission of Honor</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2018.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 5.9/10.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="MissionOfHonor_info">
+                            <div class="bg">
+                                <p>
+                                    303 Squadron RAF, Battle of Britain, Polish veterans, heroic air exploits <a
+                                        href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Vikram Vedha card--------------------- -->
+            <div class="moviecontainer">
+                <div class="VikramVedhaMovieContainer">
+                    <div class="VikramVedha">
+                        <div id="VikramVedhafront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Vikram Vedha</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2022.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 7.1/10.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="VikramVedha_info">
+                            <div class="bg">
+                                <p>
+                                    A tough police officer sets out to track down and kill an equally tough gangster <a
+                                        href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Chatrapathi card--------------------- -->
+            <div class="moviecontainer">
+                <div class="ChatrapathiMovieContainer">
+                    <div class="Chatrapathi">
+                        <div id="Chatrapathifront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Chatrapathi</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2023.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 3.9/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Chatrapathi_info">
+                            <div class="bg">
+                                <p> Shivaji's family displaced to Visakhapatnam, faces bondage, worsened by jealous
+                                    stepbrother's intrusion into his life <a href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Rebel Moon card--------------------- -->
+            <div class="moviecontainer">
+                <div class="RebelMoonMovieContainer">
+                    <div class="RebelMoon">
+                        <div id="RebelMoonfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Rebel Moon</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2023.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 5.6/10.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="RebelMoon_info">
+                            <div class="bg">
+                                <p> Distant moon settlement faces tyranny; mysterious villager emerges as key to
+                                    survival <a href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------------Attack: Part 1 card--------------- -->
+            <div class="moviecontainer">
+                <div class="AttackP1MovieContainer">
+                    <div class="AttackP1">
+                        <div id="AttackP1front">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Attack: Part 1</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2022.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 6.8/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="AttackP1_info">
+                            <div class="bg">
+                                <p> Soldier embraces destiny, battles inner demons, becomes India's first super soldier;
+                                    action-packed fight against terrorism <a href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!----------------------URI card-------------------- -->
+            <div class="moviecontainer">
+                <div class="URIMovieContainer">
+                    <div class="URI">
+                        <div id="URIfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Uri: The Surgical Strike</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2019.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 8.2/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="URI_info">
+                            <div class="bg">
+                                <p>
+                                    Indian special forces conduct covert operation, avenging fellow soldiers killed by
+                                    terrorists at their base <a href="#">Read More...</a></p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!----------------------6 Underground card--------------------- -->
+            <div class="moviecontainer">
+                <div class="SixUndergroundMovieContainer">
+                    <div class="SixUnderground">
+                        <div id="SixUndergroundfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">6 Underground</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2019.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 6.1/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="SixUnderground_info">
+                            <div class="bg">
+                                <p>
+                                    Global elite, masters in their fields, selected to erase pasts, alter future <a
+                                        href="#">Read More...</a>
+                                </p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Shivaay card--------------------- -->
+            <div class="moviecontainer">
+                <div class="ShivaayMovieContainer">
+                    <div class="Shivaay">
+                        <div id="Shivaayfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Shivaay</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2016.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 6.1/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Shivaay_info">
+                            <div class="bg">
+                                <p>
+                                    Mountaineer races time, rescues mute daughter from Bulgarian human traffickers' grip
+                                    <a href="#">Read More...</a>
+                                </p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------War card--------------------- -->
+            <div class="moviecontainer">
+                <div class="WarMovieContainer">
+                    <div class="War">
+                        <div id="Warfront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">War</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2019.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 6.5/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="War_info">
+                            <div class="bg">
+                                <p>
+                                    Agent Khalid pursues rogue mentor Kabir, igniting a deadly war <a href="#">Read
+                                        More...</a>
+                                </p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------Saaho card--------------------- -->
+            <div class="moviecontainer">
+                <div class="SaahoMovieContainer">
+                    <div class="Saaho">
+                        <div id="Saahofront">
+                            <div class="gradient">
+                                <div class="intro">
+                                    <h1 id="MovieTitle">Saaho</h1>
+                                    <p id="MovieDescription"><b>Year :</b> 2019.</p>
+                                    <p id="MovieDescription"><b>IMDB Rating :</b> 5/10.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="Saaho_info">
+                            <div class="bg">
+                                <p>
+                                    Megalopolis heist sparks gangster power struggle, enigmatic cop on relentless
+                                    pursuit <a href="#">Read More...</a>
+                                </p>
+                                <br>
+                                <a href="#"><button class="watchbtninsidecard">Watch Now</button></a><br><br>
+                                <a href="#"><button class="trailerbtninsidecard">Trailer</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="embed-responsive embed-responsive-21by9 TrailerContainer">
+        <i class="fa-regular fa-circle-xmark TrailerContainerCloseBtn"></i>
+
+        <iframe id="TrailerFrame" class="embed-responsive-item" src="https://www.youtube.com/embed/l5OAxkuq850?si=pNRzOiEJrqV9AU-a" height="350" width="650" id="iframebox" allowfullscreen></iframe>
+      </div>
+    <footer>
+
+        <center>
+            <img src="images/BigWigLogo.png" alt="logo" id="footerLogo">
+        </center>
+        <div class="d-flex justify-content-center footer-icon">
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+    </footer>
+    <div class="copyrightsection">
+        <center>
+            Copyright@2024;Designed By Bigwigcorp.com
+        </center>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $("#watchTrailerBtn").click(function(){
+        
+        $(".TrailerContainer").toggle();
+
+    });
+
+    $(".TrailerContainerCloseBtn").click(function(){
+        
+
+        $(".TrailerContainer").toggle();
+    });
+});
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+body{
+    margin: 0px;
+    /* padding: 0px; */
+}
+#ImgSection{
+    width: 100vw;
+    height: 400px;
+}
+.CorporateDiscountInfo{
+    max-width: 900px;
+    margin: auto;
+}
+.CorporateDiscountInfo p{
+    margin: 5px;
+    text-align: justify;
+}
+
+.bgshapescontainer{
+    height: 250px;
+    width: 250px;
+    /* background-image: url('./images/shape.png'); */
+    margin-right: 30px;
+}
+
+.shape{
+    position: relative;
+    
+}
+.front,.back{
+    position: absolute;
+    text-align: center;
+    color: white;
+    align-items: center;
+    transition: 1s;
+    font-family: "Madimi One", sans-serif;
+
+}
+.back{
+    padding-top: 90px;
+    padding-left: 75px;
+}
+
+.shape:hover > .front{
+    rotate: 60deg;
+    transition: 1s;
+}
+
+#title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.OfferDescription{
+    font-size: 19px;
+    max-width: 900px;
+    font-weight: bold;
+    margin: auto;
+    font-family: basic,sans-serif;
+    text-align: center;
+}
+
+#imgContainer{
+    width: 350px;
+    height: 350px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

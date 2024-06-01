@@ -1,0 +1,4031 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", "Sofia-sans";
+
+    /* font-family: ; */
+}
+
+/* #imgcontainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0PX;
+} */
+.navbar-nav{
+    text-align: center;
+    background-color: black;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    z-index: 100000;
+    display: none;
+} 
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100000;
+    display: inline;
+}
+
+
+#content {
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+#mainimg{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#loginbtn {
+    width: 80px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+
+}
+
+#loginbtn:hover {
+    transform: scale(1.05);
+    background-color: #ffd700;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(0, 0, 0, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    color: black;
+    transition: 0.5s;
+}
+
+#movieslogo {
+    width: 400px;
+    float: right;
+
+}
+
+#watchTrailerBtn {
+    width: 600px;
+    height: auto;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: auto;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    /* position: absolute;
+    top: 75%;
+    left: 8%; */
+}
+
+#watchBtn {
+    width: 30px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: auto;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    /* position: absolute;
+    top: 75%;
+    left: 20%; */
+}
+
+#logo {
+    /* height: 130px; */
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+/* .imagesSelector{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+} */
+
+#watchBtn:hover,
+#watchTrailerBtn:hover {
+    background-color: #ffd700;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    color: black;
+    transition: 1S;
+}
+#watchbtncontainer{
+    position: absolute;
+    bottom: 15%;
+    left: 1%;
+}
+.imagesset {
+    height: 140px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.imgcontainer {
+    position: absolute;
+    top: 80%;
+    right: 2%;
+}
+
+.imagesset:hover {
+    border: 1px solid whitesmoke;
+}
+
+
+.categoryframe a {
+    color: white;
+    text-decoration: none;
+}
+.categoryframe{
+    overflow-y: scroll;
+    padding: 20px;
+    height: auto;
+}
+.categoryframe::-webkit-scrollbar{
+    display: none;
+}
+
+.category {
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    height: 65px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+#next_arrow{
+    height: 65px;
+    width: 65px;
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 10px 0px;
+}
+
+#next_arrow:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+
+}
+.category:hover {
+    transform: scale(1.1);
+}
+
+#CategoryAction {
+    background-image: url(images/actioncategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryDrama {
+    background-image: url(images/dramacategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* #bolly1{
+    height: 280px;
+    width: 200px;
+    background-image: url(https://static.toiimg.com/photo/msid-61979714/61979714.jpg?23962);
+    background-size: 100% 100%;
+    border-radius: 10px;
+} */
+
+#CategorySports {
+    background-image: url(images/SportCaTegory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryComedy {
+    background-image: url(images/ComedyCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryHorror {
+    background-image: url(images/HorrorCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryAdventure {
+    background-image: url(images/AdventureCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryBollywood {
+    background-image: url(images/BollywoodCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryRomance {
+    background-image: url(images/RomanceCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategorySci-fi {
+    background-image: url(images/Sci-fiCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#CategoryThriller {
+    background-image: url(images/ThrillerCategory.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#Action,
+#Drama,
+#Thriller,
+#Horror,
+#Bollywood,
+#Comedy{
+    overflow-y: scroll;
+    margin: 20px;
+}
+#Action::-webkit-scrollbar,
+#Drama::-webkit-scrollbar,
+#Thriller::-webkit-scrollbar,
+#Horror::-webkit-scrollbar,
+#Bollywood::-webkit-scrollbar,
+#Comedy::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* -------------------movies container-------------------- */
+
+.moviecontainer {
+    height: auto;
+    width: 200px;
+    margin-right: 15px;
+    margin-top: 20px;
+    border-radius: 2rem;
+    /* background-color: transparent; */
+}
+
+.SanjuMovieContainer,
+.pkMovieContainer,
+.barfiMovieContainer,
+.twelvefailMovieContainer,
+.drishyamMovieContainer,
+.tanhajiMovieContainer,
+.sambahadoorMovieContainer,
+.OMGTwoMovieContainer,
+.ZeroMovieContainer,
+.HappynewyearMovieContainer,
+.MohenjoDaroMovieContainer,
+.SuperThirtyMovieContainer,
+.CaptainMillerMovieContainer,
+.Dune-P1MovieContainer,
+.MissionOfHonorMovieContainer,
+.VikramVedhaMovieContainer,
+.ChatrapathiMovieContainer,
+.RebelMoonMovieContainer,
+.AttackP1MovieContainer,
+.URIMovieContainer,
+.SixUndergroundMovieContainer,
+.ShivaayMovieContainer,
+.WarMovieContainer,
+.SaahoMovieContainer,
+.GuzaarishMovieContainer,
+.HaddiMovieContainer,
+.ParmanuMovieContainer,
+.HichkiMovieContainer,
+.PanipatMovieContainer,
+.KapoorandSonsMovieContainer,
+.BharatMovieContainer,
+.MaharshiMovieContainer,
+.SuiDhaagaMovieContainer,
+.SukheeMovieContainer,
+.MaharaniMovieContainer,
+.DhobiGhatMovieContainer,
+.MadrasCafeMovieContainer,
+.BadlaMovieContainer,
+.GameOverMovieContainer,
+.FreddyMovieContainer,
+.CadaverMovieContainer,
+.NoiseMovieContainer,
+.TheCaptainMovieContainer,
+.AtharvaMovieContainer,
+.MaayavanMovieContainer,
+.NishabdhamMovieContainer,
+.PoacherMovieContainer,
+.OppenheimerMovieContainer,
+.TheOtherSideOfTheDoorMovieContainer,
+.TheWitchMovieContainer,
+.VeronicaMovieContainer,
+.MiseryMovieContainer,
+.ItMovieContainer,
+.TheHouseNextDoorMovieContainer,
+.CallMovieContainer,
+.SmileMovieContainer,
+.TheConjuringTwoMovieContainer,
+.TheNunMovieContainer,
+.AnnabelleMovieContainer,
+.TheLastExorcismMovieContainer,
+.cardcontainer{
+
+    height: 280px;
+    width: 200px;
+    border-radius: 2rem;
+}
+
+
+#Action,
+#Bollywood,
+#Category,
+#Drama,
+#Horror,
+#Thriller,
+#Comedy,
+#SelectGenres{
+    padding: 10px;
+    height: auto;
+}
+
+
+/* --------------Sanju movie card------------------- */
+.sanju {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sanjufront,
+#sanju_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#sanjufront {
+    background-image: url(https://e0.pxfuel.com/wallpapers/337/973/desktop-wallpaper-sanju-movie-review-sanju-movie-reaction-sanju-sanju-movie-poster-thumbnail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#sanju_info {
+    height: 280px;
+    background-image: url(https://static.toiimg.com/photo/msid-61979714/61979714.jpg?23962);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#sanju_info p {
+    margin: 0px;
+}
+
+.SanjuMovieContainer:hover>.sanju {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SanjuMovieContainer:hover>.sanju #sanju_info {
+    opacity: 1;
+}
+
+/* --------------Sanju movie card end------------------- */
+
+
+/* -------------------------------pk movie card --------------------- */
+
+.pk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#pkfront,
+#pk_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#pkfront {
+    background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11290399_p_v8_ad.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#pk_info {
+    height: 280px;
+    background-image: url(https://miro.medium.com/v2/resize:fit:936/0*c1JhJwTFSHXBydcN);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#pk_info p {
+    margin: 0px;
+}
+
+.pkMovieContainer:hover>.pk {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.pkMovieContainer:hover>.pk #pk_info {
+    opacity: 1;
+}
+
+/* --------------------------------pk movie card end--------------------- */
+
+/* -------------------------------barfi movie card --------------------- */
+
+.barfi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#barfifront,
+#barfi_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#barfifront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/2/2e/Barfi%21_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#barfi_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTQzMTEyODY2Ml5BMl5BanBnXkFtZTgwMjA0MDUyMjE@._V1_FMjpg_UX1000_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#barfi_info p {
+    margin: 0px;
+}
+
+.barfiMovieContainer:hover>.barfi {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.barfiMovieContainer:hover>.barfi #barfi_info {
+    opacity: 1;
+}
+
+/* --------------------------------barfi movie card end--------------------- */
+
+/* -------------------------------12thfail movie card --------------------- */
+
+.twelvefail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#twelvefailfront,
+#twelvefail_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#twelvefailfront {
+    background-image: url(https://popcornreviewss.com/wp-content/uploads/2023/10/Screenshot_20231030-143647_Letterboxd.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#twelvefail_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDI4OTM1ZjMtOWQxMC00OTY5LTg3NjQtMjlhMWVjODFlYTY4XkEyXkFqcGdeQXVyMTYzMTU3Njgx._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#twelvefail_info p {
+    margin: 0px;
+}
+
+.twelvefailMovieContainer:hover>.twelvefail {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.twelvefailMovieContainer:hover>.twelvefail #twelvefail_info {
+    opacity: 1;
+}
+
+/* --------------------------------12thfail movie card end--------------------- */
+
+/* -------------------------------drishyam movie card --------------------- */
+
+.drishyam {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#drishyamfront,
+#drishyam_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#drishyamfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9e/Drishyam_2_2022_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drishyam_info {
+    height: 280px;
+    background-image: url(https://images.news18.com/ibnlive/uploads/2023/01/aksdj.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#drishyam_info p {
+    margin: 0px;
+}
+
+.drishyamMovieContainer:hover>.drishyam {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.drishyamMovieContainer:hover>.drishyam #drishyam_info {
+    opacity: 1;
+}
+
+/* --------------------------------drishyam movie card end--------------------- */
+
+/* -------------------------------tanhaji movie card --------------------- */
+
+.tanhaji {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#tanhajifront,
+#tanhaji_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#tanhajifront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Tanaji_film_poster.jpg/220px-Tanaji_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#tanhaji_info {
+    height: 280px;
+    background-image: url(https://images.justwatch.com/poster/298467380/s718/tanhaji-the-unsung-warrior.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#tanhaji_info p {
+    margin: 0px;
+}
+
+.tanhajiMovieContainer:hover>.tanhaji {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.tanhajiMovieContainer:hover>.tanhaji #tanhaji_info {
+    opacity: 1;
+}
+
+/* --------------------------------tanhaji movie card end--------------------- */
+
+/* -------------------------------sambahadoor movie card --------------------- */
+
+.sambahadoor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sambahadoorfront,
+#sambahadoor_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#sambahadoorfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Sam_Bahadur_film_poster.jpg/220px-Sam_Bahadur_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#sambahadoor_info {
+    height: 280px;
+    background-image: url(https://assets.gadgets360cdn.com/pricee/assets/product/202311/Sam-Bahadur_1699944687.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#sambahadoor_info p {
+    margin: 0px;
+}
+
+.sambahadoorMovieContainer:hover>.sambahadoor {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.sambahadoorMovieContainer:hover>.sambahadoor #sambahadoor_info {
+    opacity: 1;
+}
+
+/* --------------------------------sambahadoor movie card end--------------------- */
+
+/* -------------------------------OMG2 movie card --------------------- */
+
+.OMGTwo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#OMGTwofront,
+#OMGTwo_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#OMGTwofront {
+    background-image: url(https://cdn.123telugu.com/content/wp-content/uploads/2023/08/OMG.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#OMGTwo_info {
+    height: 280px;
+    background-image: url(https://img.mensxp.com/media/content/2023/Jul/358933680_278752578170539_3810983669027614446_n_64ad16de1b7e2.jpeg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#OMGTwo_info p {
+    margin: 0px;
+}
+
+.OMGTwoMovieContainer:hover>.OMGTwo {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.OMGTwoMovieContainer:hover>.OMGTwo #OMGTwo_info {
+    opacity: 1;
+}
+
+/* --------------------------------OMG2 movie card end--------------------- */
+
+
+/* -------------------------------ZERO movie card --------------------- */
+
+.Zero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Zerofront,
+#Zero_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Zerofront {
+    background-image: url(https://assets.gadgets360cdn.com/pricee/assets/product/202205/Zero-poster_1652121444.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Zero_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Zero_official_poster.jpg/220px-Zero_official_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Zero_info p {
+    margin: 0px;
+}
+
+.ZeroMovieContainer:hover>.Zero {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ZeroMovieContainer:hover>.Zero #Zero_info {
+    opacity: 1;
+}
+
+/* --------------------------------ZERO movie card end--------------------- */
+
+
+/* -------------------------------Happynewyear movie card --------------------- */
+
+.Happynewyear {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Happynewyearfront,
+#Happynewyear_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Happynewyearfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjEwZGQwZWMtNTU4Zi00YWVlLTlhZTYtZjc2MzJmMGVmMDQwXkEyXkFqcGdeQXVyNjQ3ODkxMjE@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Happynewyear_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3SGgcbq_rODB2bseynol3QqE0ZtqRZpEVUdxyqvgAW-rZgQKtwNPfeyw9CpADWPoWzE&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Happynewyear_info p {
+    margin: 0px;
+}
+
+.HappynewyearMovieContainer:hover>.Happynewyear {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.HappynewyearMovieContainer:hover>.Happynewyear #Happynewyear_info {
+    opacity: 1;
+}
+
+/* --------------------------------Happynewyear movie card end--------------------- */
+
+
+/* -------------------------------MohenjoDaro movie card --------------------- */
+
+.MohenjoDaro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#MohenjoDarofront,
+#MohenjoDaro_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#MohenjoDarofront {
+    background-image: url(https://m.media-amazon.com/images/I/81oS4cZ6r+L._AC_UF1000,1000_QL80_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#MohenjoDaro_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e4/Mohenjo_Daro_Poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#MohenjoDaro_info p {
+    margin: 0px;
+}
+
+.MohenjoDaroMovieContainer:hover>.MohenjoDaro {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MohenjoDaroMovieContainer:hover>.MohenjoDaro #MohenjoDaro_info {
+    opacity: 1;
+}
+
+/* --------------------------------Happynewyear movie card end--------------------- */
+
+
+/* -------------------------------SuperThirty movie card --------------------- */
+
+.SuperThirty {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#SuperThirtyfront,
+#SuperThirty_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#SuperThirtyfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWQzM2Y0ZDQtYjA1MS00YmUzLWFiMGQtZTliZWM1MWRiNDZhXkEyXkFqcGdeQXVyNTE2MzU4OTA@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#SuperThirty_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/2/29/Super_30_The_Film.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#SuperThirty_info p {
+    margin: 0px;
+}
+
+.SuperThirtyMovieContainer:hover>.SuperThirty {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SuperThirtyMovieContainer:hover>.SuperThirty #SuperThirty_info {
+    opacity: 1;
+}
+
+/* --------------------------------SuperThirty movie card end--------------------- */
+
+
+/* -------------------------------CaptainMiller movie card --------------------- */
+.intro{
+    height: auto;
+    width: 200px;
+    position: absolute;
+    /* padding-top: 183px; */
+    bottom: 10px;
+    opacity: 1.5;
+    color: white;
+    border-radius: 0px 0px 32px 32px;
+    border-radius: 2rem;
+    /* padding-left: 20px */
+}
+#MovieTitle{
+    margin: 0px 8px;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+#MovieDescription{
+    font-size: 13px;
+    color: rgb(189, 189, 189);
+    margin: 0px;
+    padding-left: 15px;
+}
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg,black 25%, hwb(0 50% 50% / -93));
+    opacity: 0.85;      
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+}
+
+.CaptainMiller {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#CaptainMillerfront,
+#CaptainMiller_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#CaptainMillerfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Captain_Miller_film_poster.jpg/220px-Captain_Miller_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#CaptainMiller_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZWYwNWFmZGMtZmNlYi00MGFmLWJmOTYtYTgyMGY2MTM0NWJkXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#CaptainMiller_info p {
+    margin: 0px;
+}
+
+.CaptainMillerMovieContainer:hover>.CaptainMiller {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.CaptainMillerMovieContainer:hover>.CaptainMiller #CaptainMiller_info {
+    opacity: 1;
+}
+
+/* --------------------------------CaptainMiller movie card end--------------------- */
+
+/* -------------------------------Dune part 1 movie card --------------------- */
+
+.DuneP1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#DuneP1front,
+#DuneP1_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#DuneP1front {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMDQ0NjgyN2YtNWViNS00YjA3LTkxNDktYzFkZTExZGMxZDkxXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#DuneP1_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwC_A5nCntlin9_DI9Jqg13m1m6tmxvPPHw&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#DuneP1_info p {
+    margin: 0px;
+}
+
+.Dune-P1MovieContainer:hover>.DuneP1 {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.Dune-P1MovieContainer:hover>.DuneP1 #DuneP1_info {
+    opacity: 1;
+}
+
+/* --------------------------------Dune part 1DuneP1 movie card end--------------------- */
+
+/* -------------------------------Mission Of Honor movie card --------------------- */
+
+.MissionOfHonor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#MissionOfHonorfront,
+#MissionOfHonor_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#MissionOfHonorfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTMxYWIyOTEtOWY5YS00YzZlLTg0MjUtMTJlYmNlMDFkNmJlXkEyXkFqcGdeQXVyMTk0MTU5NDM@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#MissionOfHonor_info {
+    height: 280px;
+    background-image: url(https://resizing.flixster.com/_ThZedr60JaLbJtiQsVjFqMVkD4=/300x300/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15906196_k_h9_aa.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#MissionOfHonor_info p {
+    margin: 0px;
+}
+
+.MissionOfHonorMovieContainer:hover>.MissionOfHonor {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MissionOfHonorMovieContainer:hover>.MissionOfHonor #MissionOfHonor_info {
+    opacity: 1;
+}
+
+/* --------------------------------Mission Of Honor movie card end--------------------- */
+
+/* -------------------------------Vikram Vedha movie card --------------------- */
+
+.VikramVedha {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#VikramVedhafront,
+#VikramVedha_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#VikramVedhafront {
+    background-image: url(https://timesofindia.indiatimes.com/photo/94183699/94183699.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#VikramVedha_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DDhQqTtM_Z1YVpgP5wCAci4JjNZn4xMplg&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#VikramVedha_info p {
+    margin: 0px;
+}
+
+.VikramVedhaMovieContainer:hover>.VikramVedha {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.VikramVedhaMovieContainer:hover>.VikramVedha #VikramVedha_info {
+    opacity: 1;
+}
+
+/* --------------------------------Vikram Vedha movie card end--------------------- */
+
+/* -------------------------------Chatrapathi movie card --------------------- */
+
+.Chatrapathi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Chatrapathifront,
+#Chatrapathi_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Chatrapathifront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BOTA0YTViMGUtM2E3ZS00ODkwLWEzYTctNWI5OWY0M2RhZDcxXkEyXkFqcGdeQXVyMTA1NTY0NzQ0._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Chatrapathi_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Chatrapathi_film_poster.jpg/220px-Chatrapathi_film_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Chatrapathi_info p {
+    margin: 0px;
+}
+
+.ChatrapathiMovieContainer:hover>.Chatrapathi {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ChatrapathiMovieContainer:hover>.Chatrapathi #Chatrapathi_info {
+    opacity: 1;
+}
+
+/* --------------------------------Chatrapathi movie card end--------------------- */
+
+/* -------------------------------RebelMoon movie card --------------------- */
+
+.RebelMoon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#RebelMoonfront,
+#RebelMoon_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#RebelMoonfront {
+    background-image: url(https://in-exstatic-vivofs.vivo.com/bCy1HLzT9bUXp6Mb/IN-IQOO/threadResource/20231230/fb980f46a5a344ba8258eb4698a1d516_w1388_h2048.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#RebelMoon_info {
+    height: 280px;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/rebel-moon-2-6585b8c05a80a.png?crop=0.668xw:1.00xh;0.0595xw,0&resize=640:*);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#RebelMoon_info p {
+    margin: 0px;
+}
+
+.RebelMoonMovieContainer:hover>.RebelMoon {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.RebelMoonMovieContainer:hover>.RebelMoon #RebelMoon_info {
+    opacity: 1;
+}
+
+/* --------------------------------RebelMoon movie card end--------------------- */
+
+/* -------------------------------Attack part 1 movie card --------------------- */
+
+.AttackP1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#AttackP1front,
+#AttackP1_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#AttackP1front {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/5/5b/Attack_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#AttackP1_info {
+    height: 280px;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3hZMQihtbVKPrWOf5V44QXk8rAB-mjW8QfC6XGu7aJ6Wx307SiTIQoshwTslnmHtArS-MC2fS3a7PRPnx06baffKIAQzzBn5FK_VIe5V-D_bfbOtrNDcFs99u56MgFBHPU9Y9lyU-Uj45jzQcUxFCIVVkfZ8YT7eK-d80Z-eTV9uueQHCggbZD8e/s1080/2022-05-27-20-28-14.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#AttackP1_info p {
+    margin: 0px;
+}
+
+.AttackP1MovieContainer:hover>.AttackP1 {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.AttackP1MovieContainer:hover>.AttackP1 #AttackP1_info {
+    opacity: 1;
+}
+
+/* --------------------------------Attack part 1 movie card end--------------------- */
+
+/* -------------------------------URI movie card --------------------- */
+
+.URI {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#URIfront,
+#URI_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#URIfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/3/3b/URI_-_New_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#URI_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BM2FhYjNhYWMtZGI2OS00Y2ZlLThhNjMtZWEwZDBlNjJlNmUxXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#URI_info p {
+    margin: 0px;
+}
+
+.URIMovieContainer:hover>.URI {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.URIMovieContainer:hover>.URI #URI_info {
+    opacity: 1;
+}
+
+/* --------------------------------URI movie card end--------------------- */
+
+/* -------------------------------SixUnderground movie card --------------------- */
+
+.SixUnderground {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#SixUndergroundfront,
+#SixUnderground_info {
+    height: 100%;
+    ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#SixUndergroundfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/8/86/6_Underground_%28film%29.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#SixUnderground_info {
+    height: 280px;
+    background-image: url(https://assets1.ignimgs.com/2019/12/12/six-underground-netflix-image014-1576194451174.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#SixUnderground_info p {
+    margin: 0px;
+}
+
+.SixUndergroundMovieContainer:hover>.SixUnderground {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SixUndergroundMovieContainer:hover>.SixUnderground #SixUnderground_info {
+    opacity: 1;
+}
+
+/* --------------------------------SixUnderground movie card end--------------------- */
+
+/* -------------------------------Shivaay movie card --------------------- */
+
+.Shivaay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Shivaayfront,
+#Shivaay_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Shivaayfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWM1OGMxM2YtNjIzZi00ZjBkLTg1MGYtMWY2M2QxNDExMzE2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Shivaay_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a1/Ajay_Devgan%27s_Shivaay_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Shivaay_info p {
+    margin: 0px;
+}
+
+.ShivaayMovieContainer:hover>.Shivaay {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ShivaayMovieContainer:hover>.Shivaay #Shivaay_info {
+    opacity: 1;
+}
+
+/* --------------------------------Shivaay movie card end--------------------- */
+
+/* -------------------------------War movie card --------------------- */
+
+.War {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Warfront,
+#War_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Warfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNDhmZmZkODYtZjcwZi00MjBkLWIzZDQtN2M5YjliOGQ4MDc2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#War_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYmFjZTU4ZjItNGU1ZC00NTAxLTkzODEtNTIyODRkZDU0MDZiXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#War_info p {
+    margin: 0px;
+}
+
+.WarMovieContainer:hover>.War {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.WarMovieContainer:hover>.War #War_info {
+    opacity: 1;
+}
+
+/* --------------------------------War movie card end--------------------- */
+
+/* -------------------------------Saaho movie card --------------------- */
+
+.Saaho {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Saahofront,
+#Saaho_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Saahofront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNDExZjFiYjItMmM3OS00OGUxLTliMTctMzFhZDkzMmFhMzY1XkEyXkFqcGdeQXVyMTA1NTAyMjAw._V1_FMjpg_UX1000_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Saaho_info {
+    height: 280px;
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/saaho-et00056595-28-04-2017-10-26-00.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Saaho_info p {
+    margin: 0px;
+}
+
+.SaahoMovieContainer:hover>.Saaho {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SaahoMovieContainer:hover>.Saaho #Saaho_info {
+    opacity: 1;
+}
+
+/* --------------------------------Saaho movie card end--------------------- */
+
+/* -------------------------------Guzaarish movie card --------------------- */
+
+.Guzaarish {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Guzaarishfront,
+#Guzaarish_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Guzaarishfront {
+    background-image: url(https://2.bp.blogspot.com/_036yF3LHHa0/TJ7lsfYgJ7I/AAAAAAAAIE4/XVMezYkp23s/s1600/Guzaarish-poster-new.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Guzaarish_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/8/81/Guzaarish_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Guzaarish_info p {
+    margin: 0px;
+}
+
+.GuzaarishMovieContainer:hover>.Guzaarish {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.GuzaarishMovieContainer:hover>.Guzaarish #Guzaarish_info {
+    opacity: 1;
+}
+
+/* --------------------------------Guzaarish movie card end--------------------- */
+
+/* -------------------------------Haddi movie card --------------------- */
+
+.Haddi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Haddifront,
+#Haddi_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Haddifront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/b/b5/Haddi_Poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Haddi_info {
+    height: 280px;
+    background-image: url(https://timesofindia.indiatimes.com/photo/102979512.cms);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Haddi_info p {
+    margin: 0px;
+}
+
+.HaddiMovieContainer:hover>.Haddi {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.HaddiMovieContainer:hover>.Haddi #Haddi_info {
+    opacity: 1;
+}
+
+/* --------------------------------Haddi movie card end--------------------- */
+
+/* -------------------------------Parmanu movie card --------------------- */
+
+.Parmanu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Parmanufront,
+#Parmanu_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Parmanufront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNWQ0ZjlkYTMtMGIwZi00ZmEyLTg3MDAtYTRiMzY4ZGYyNGRkXkEyXkFqcGdeQXVyNDY5MTUyNjU@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Parmanu_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/d/da/Parmanu_film_poster.jpeg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Parmanu_info p {
+    margin: 0px;
+}
+
+.ParmanuMovieContainer:hover>.Parmanu {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ParmanuMovieContainer:hover>.Parmanu #Parmanu_info {
+    opacity: 1;
+}
+
+/* --------------------------------Parmanu movie card end--------------------- */
+
+/* -------------------------------Hichki movie card --------------------- */
+
+.Hichki {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Hichkifront,
+#Hichki_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Hichkifront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYWM1NTRhZmYtYmEwNy00ZTNkLWJiODYtNWRiMmY0ZDg2YzE0XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Hichki_info {
+    height: 280px;
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hichki-exclusively-for-women-et00073067-26-03-2018-01-05-41.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Hichki_info p {
+    margin: 0px;
+}
+
+.HichkiMovieContainer:hover>.Hichki {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.HichkiMovieContainer:hover>.Hichki #Hichki_info {
+    opacity: 1;
+}
+
+/* --------------------------------Hichki movie card end--------------------- */
+
+/* -------------------------------Panipat movie card --------------------- */
+
+.Panipat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Panipatfront,
+#Panipat_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Panipatfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/5/54/Panipat_%28film%29_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Panipat_info {
+    height: 280px;
+    background-image: url(https://static.toiimg.com/photo/72375755.cms?imgsize=109134);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Panipat_info p {
+    margin: 0px;
+}
+
+.PanipatMovieContainer:hover>.Panipat {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.PanipatMovieContainer:hover>.Panipat #Panipat_info {
+    opacity: 1;
+}
+
+/* --------------------------------Panipat movie card end--------------------- */
+
+/* -------------------------------KapoorandSons movie card --------------------- */
+
+.KapoorandSons {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#KapoorandSonsfront,
+#KapoorandSons_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#KapoorandSonsfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/5/59/Kapoor_%26_Sons_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#KapoorandSons_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYjk2YzA1NjktZGIzOS00NDhmLTkzMDEtNDk4OTc2MTU3NDVkXkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#KapoorandSons_info p {
+    margin: 0px;
+}
+
+.KapoorandSonsMovieContainer:hover>.KapoorandSons {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.KapoorandSonsMovieContainer:hover>.KapoorandSons #KapoorandSons_info {
+    opacity: 1;
+}
+
+/* --------------------------------KapoorandSons movie card end--------------------- */
+
+/* -------------------------------Bharat movie card --------------------- */
+
+.Bharat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Bharatfront,
+#Bharat_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Bharatfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c9/Bharat_film_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Bharat_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDUxM2NkYzMtZDk5YS00NGRiLWIxYmUtODNjYzQzOTc0ZDcyXkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Bharat_info p {
+    margin: 0px;
+}
+
+.BharatMovieContainer:hover>.Bharat {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.BharatMovieContainer:hover>.Bharat #Bharat_info {
+    opacity: 1;
+}
+
+/* --------------------------------Bharat movie card end--------------------- */
+
+/* -------------------------------Maharshi movie card --------------------- */
+
+.Maharshi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Maharshifront,
+#Maharshi_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Maharshifront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZjAyMjBiNDItY2JkNi00NzY3LWIxM2EtY2VlNDZjMTAyNmRmXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Maharshi_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNzQ3YzkyMjEtNGFmYi00Y2QzLTg4NjItODMzNWQ0NzBiYWEzXkEyXkFqcGdeQXVyNjQ1MDcxNzM@._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Maharshi_info p {
+    margin: 0px;
+}
+
+.MaharshiMovieContainer:hover>.Maharshi {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MaharshiMovieContainer:hover>.Maharshi #Maharshi_info {
+    opacity: 1;
+}
+
+/* --------------------------------Maharshi movie card end--------------------- */
+
+/* -------------------------------SuiDhaaga movie card --------------------- */
+
+.SuiDhaaga {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#SuiDhaagafront,
+#SuiDhaaga_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#SuiDhaagafront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNDFkZWM5ZDctZDZiYi00MWY3LWJkZmYtZDg3MjJjN2MxZWQzXkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#SuiDhaaga_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDde8wRU7AkvO6MWGs4aeK77GDxq0r6q1lSrCCtgFOkjYgrgR5KAgRGS-pnYsR7yoQ0U&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#SuiDhaaga_info p {
+    margin: 0px;
+}
+
+.SuiDhaagaMovieContainer:hover>.SuiDhaaga {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SuiDhaagaMovieContainer:hover>.SuiDhaaga #SuiDhaaga_info {
+    opacity: 1;
+}
+
+/* --------------------------------SuiDhaaga movie card end--------------------- */
+
+/* -------------------------------Sukhee movie card --------------------- */
+
+.Sukhee {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Sukheefront,
+#Sukhee_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Sukheefront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWE5MWFmMGItNWYxNC00ZTljLTgxOGMtMGQyYjkzMzc2YzI2XkEyXkFqcGdeQXVyMTA1NDIyNTAx._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Sukhee_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/b/b2/Sukhee_film_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Sukhee_info p {
+    margin: 0px;
+}
+
+.SukheeMovieContainer:hover>.Sukhee {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SukheeMovieContainer:hover>.Sukhee #Sukhee_info {
+    opacity: 1;
+}
+
+/* --------------------------------Sukhee movie card end--------------------- */
+
+/* -------------------------------Maharani movie card --------------------- */
+
+.Maharani {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Maharanifront,
+#Maharani_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Maharanifront {
+    background-image: url(https://images.filmibeat.com/img/popcorn/movie_posters/maharani-20230706181337-21919.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Maharani_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMDFhYjM0Y2ItNTMwZC00MDEwLThiYmItMzRjZjMxOGYyOWEzXkEyXkFqcGdeQXVyNjExMDczMDA@._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Maharani_info p {
+    margin: 0px;
+}
+
+.MaharaniMovieContainer:hover>.Maharani {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MaharaniMovieContainer:hover>.Maharani #Maharani_info {
+    opacity: 1;
+}
+
+/* --------------------------------Maharani movie card end--------------------- */
+
+
+/* -------------------------------DhobiGhat movie card --------------------- */
+
+.DhobiGhat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#DhobiGhatfront,
+#DhobiGhat_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#DhobiGhatfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/0/09/Dhobi_Ghat_Movie.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#DhobiGhat_info {
+    height: 280px;
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/et00006174.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#DhobiGhat_info p {
+    margin: 0px;
+}
+
+.DhobiGhatMovieContainer:hover > .DhobiGhat {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.DhobiGhatMovieContainer:hover>.DhobiGhat #DhobiGhat_info {
+    opacity: 1;
+}
+
+/* --------------------------------DhobiGhat movie card end--------------------- */
+
+/* -------------------------------Madras Cafe movie card --------------------- */
+
+.MadrasCafe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#MadrasCafefront,
+#MadrasCafe_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#MadrasCafefront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/ec/Madras_Cafe_Poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#MadrasCafe_info {
+    height: 280px;
+    background-image: url(https://media5.bollywoodhungama.in/wp-content/uploads/2016/03/70323710-196x147.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#MadrasCafe_info p {
+    margin: 0px;
+}
+
+.MadrasCafeMovieContainer:hover > .MadrasCafe {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MadrasCafeMovieContainer:hover > .MadrasCafe #MadrasCafe_info {
+    opacity: 1;
+}
+
+/* --------------------------------Madras Cafe movie card end--------------------- */
+
+/* -------------------------------Badla movie card --------------------- */
+
+.Badla {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Badlafront,
+#Badla_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Badlafront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYjZiMzIzYTctNDViZi00OWNmLWFmN2YtMmI2OWJiZWViMmY3XkEyXkFqcGdeQXVyNTYwMzA0MTM@._V1_.jpg );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Badla_info {
+    height: 280px;
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/badla-et00077951-19-06-2018-10-46-53.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Badla_info p {
+    margin: 0px;
+}
+
+.BadlaMovieContainer:hover > .Badla {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.BadlaMovieContainer:hover > .Badla #Badla_info {
+    opacity: 1;
+}
+
+/* --------------------------------Badla movie card end--------------------- */
+
+/* -------------------------------GameOver movie card --------------------- */
+
+.GameOver {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#GameOverfront,
+#GameOver_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#GameOverfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDA5OTIyZmYtNTIyNS00ODgyLWEzNjMtZTg2NDk5ZjdjZGVmXkEyXkFqcGdeQXVyMzI4MzEwNQ@@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#GameOver_info {
+    height: 280px;
+    background-image: url(https://play-lh.googleusercontent.com/bnugRBmSy9f6bSwnpYJ6Jla7uULeJkOpJUGlxKtJ_GVx7GaZ7NbLXhWurtofhhuBFqesBUURUMJBO9oLmd0);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#GameOver_info p {
+    margin: 0px;
+}
+
+.GameOverMovieContainer:hover > .GameOver {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.GameOverMovieContainer:hover > .GameOver #GameOver_info {
+    opacity: 1;
+}
+
+/* --------------------------------GameOver movie card end--------------------- */
+
+/* -------------------------------Freddy movie card --------------------- */
+
+.Freddy {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Freddyfront,
+#Freddy_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Freddyfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/c/cb/Freddy_Official_Poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Freddy_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvREcrbPk5pQD0m99T8p9bzqYOLkvSqXQoNvCKHN-seJao-EcPJUjqkLo05pgG5vHz_w&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Freddy_info p {
+    margin: 0px;
+}
+
+.FreddyMovieContainer:hover > .Freddy {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.FreddyMovieContainer:hover > .Freddy #Freddy_info {
+    opacity: 1;
+}
+
+/* --------------------------------Freddy movie card end--------------------- */
+
+/* -------------------------------Cadaver movie card --------------------- */
+
+.Cadaver {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Cadaverfront,
+#Cadaver_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Cadaverfront {
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Cadaver_info {
+    height: 280px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Cadaver_info p {
+    margin: 0px;
+}
+
+.CadaverMovieContainer:hover > .Cadaver {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.CadaverMovieContainer:hover > .Cadaver #Cadaver_info {
+    opacity: 1;
+}
+
+/* --------------------------------Cadaver movie card end--------------------- */
+
+/* -------------------------------Noise movie card --------------------- */
+
+.Noise {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Noisefront,
+#Noise_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Noisefront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BODU2ZTdiMTgtNDFlMy00NzUwLWJmZjctZTQ1OGNlZDBmZWQ0XkEyXkFqcGdeQXVyMjc2MjU4NjQ@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Noise_info {
+    height: 280px;
+    background-image: url(https://martincid.com/wp-content/uploads/2023/03/MV5BNWRlNjYwYTctN2Y2OC00NzRkLWI0MjYtZWRhMDVhYWYxMmVhXkEyXkFqcGdeQXVyMjc2MjU4NjQ@._V1_-696x975.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Noise_info p {
+    margin: 0px;
+}
+
+.NoiseMovieContainer:hover > .Noise {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.NoiseMovieContainer:hover > .Noise #Noise_info {
+    opacity: 1;
+}
+
+/* --------------------------------Noise movie card end--------------------- */
+
+/* -------------------------------TheCaptain movie card --------------------- */
+
+.TheCaptain {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheCaptainfront,
+#TheCaptain_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheCaptainfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYjM5OTcyOGUtNGQzOS00ZjYxLTkzZTgtNmZjZTgzMTIxM2UxXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheCaptain_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/3/32/The_Captain_2019_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheCaptain_info p {
+    margin: 0px;
+}
+
+.TheCaptainMovieContainer:hover > .TheCaptain {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheCaptainMovieContainer:hover > .TheCaptain #TheCaptain_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheCaptain movie card end--------------------- */
+
+/* -------------------------------Atharva movie card --------------------- */
+
+.Atharva {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Atharvafront,
+#Atharva_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Atharvafront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BY2RlYzE5ZGItMDZjNy00OTQzLWI5ODItMGI3OTlmYTJiNzdhXkEyXkFqcGdeQXVyMTA0MDMwNDEy._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Atharva_info {
+    height: 280px;
+    background-image: url(https://c.saavncdn.com/285/Atharva-Telugu-2023-20231218171011-500x500.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Atharva_info p {
+    margin: 0px;
+}
+
+.AtharvaMovieContainer:hover > .Atharva {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.AtharvaMovieContainer:hover > .Atharva #Atharva_info {
+    opacity: 1;
+}
+
+/* --------------------------------Atharva movie card end--------------------- */
+
+/* -------------------------------Maayavan movie card --------------------- */
+
+.Maayavan {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Maayavanfront,
+#Maayavan_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Maayavanfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/c/cc/Mayavan_%282017%29.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Maayavan_info {
+    height: 280px;
+    background-image: url(https://play-lh.googleusercontent.com/t8iUB5_BMj2VuhGo6lo3Z278MiAh_H1UsQt-RiTnNNmEPYozFPYf-Ar6GOt2XKmbGtjiyQ);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Maayavan_info p {
+    margin: 0px;
+}
+
+.MaayavanMovieContainer:hover > .Maayavan {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MaayavanMovieContainer:hover > .Maayavan #Maayavan_info {
+    opacity: 1;
+}
+
+/* --------------------------------Maayavan movie card end--------------------- */
+
+/* -------------------------------Nishabdham movie card --------------------- */
+
+.Nishabdham {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Nishabdhamfront,
+#Nishabdham_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Nishabdhamfront {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6nUb7-DlOsPkfZGYOiC_tIsu00SbDfq01TR-n_WWR312SRhN227G6BrNyBKOHpR1pmQ&usqp=CAU);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Nishabdham_info {
+    height: 280px;
+    background-image: url(https://assets.gadgets360cdn.com/pricee/assets/product/202209/Nishabdham_1663533060.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Nishabdham_info p {
+    margin: 0px;
+}
+
+.NishabdhamMovieContainer:hover > .Nishabdham {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.NishabdhamMovieContainer:hover > .Nishabdham #Nishabdham_info {
+    opacity: 1;
+}
+
+/* --------------------------------Nishabdham movie card end--------------------- */
+
+/* -------------------------------Poacher movie card --------------------- */
+
+.Poacher {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Poacherfront,
+#Poacher_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Poacherfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNmRkMWNkNzUtNDFhNy00YjJiLThkYjMtMjBiODU4NzAyODY2XkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Poacher_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5THCHlU23--2az998UvYJXYyo8HsT33LMm6zCnACitbqHaljvqwyCcKKeCKmzGFf_lg4&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Poacher_info p {
+    margin: 0px;
+}
+
+.PoacherMovieContainer:hover > .Poacher {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.PoacherMovieContainer:hover > .Poacher #Poacher_info {
+    opacity: 1;
+}
+
+/* --------------------------------Poacher movie card end--------------------- */
+
+/* -------------------------------Oppenheimer movie card --------------------- */
+
+.Oppenheimer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Oppenheimerfront,
+#Oppenheimer_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Oppenheimerfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/220px-Oppenheimer_%28film%29.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Oppenheimer_info {
+    height: 280px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSulHHwmTobE4KmcccgiOwi5SM5Kxd9wM9HR5Dy4C4vlIXR6LjvQfFs5Qk9EMDMLRifWGQ&usqp=CAU);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Oppenheimer_info p {
+    margin: 0px;
+}
+
+.OppenheimerMovieContainer:hover > .Oppenheimer {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.OppenheimerMovieContainer:hover > .Oppenheimer #Oppenheimer_info {
+    opacity: 1;
+}
+
+/* --------------------------------Oppenheimer movie card end--------------------- */
+
+/* -------------------------------TheOtherSideOfTheDoor movie card --------------------- */
+
+.TheOtherSideOfTheDoor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheOtherSideOfTheDoorfront,
+#TheOtherSideOfTheDoor_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheOtherSideOfTheDoorfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjE2MTk4NzkzOF5BMl5BanBnXkFtZTgwNjk3OTAyODE@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheOtherSideOfTheDoor_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/2/2c/The_Other_Side_of_the_Door_2016.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheOtherSideOfTheDoor_info p {
+    margin: 0px;
+}
+
+.TheOtherSideOfTheDoorMovieContainer:hover > .TheOtherSideOfTheDoor {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheOtherSideOfTheDoorMovieContainer:hover > .TheOtherSideOfTheDoor #TheOtherSideOfTheDoor_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheOtherSideOfTheDoor movie card end--------------------- */
+
+/* -------------------------------TheWitch movie card --------------------- */
+
+.TheWitch {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheWitchfront,
+#TheWitch_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheWitchfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/b/bf/The_Witch_poster.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheWitch_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTUyNzkwMzAxOF5BMl5BanBnXkFtZTgwMzc1OTk1NjE@._V1_.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheWitch_info p {
+    margin: 0px;
+}
+
+.TheWitchMovieContainer:hover > .TheWitch {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheWitchMovieContainer:hover > .TheWitch #TheWitch_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheWitch movie card end--------------------- */
+
+/* -------------------------------Veronica movie card --------------------- */
+
+.Veronica {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Veronicafront,
+#Veronica_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Veronicafront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMmRkMDQzYzItZDFhMS00YzM1LTk0ZGMtZmExMzdiNzEwOTE4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Veronica_info {
+    height: 280px;
+    background-image: url(https://www.naijaprey.com/wp-content/uploads/2023/08/Veronica2017horror.jpeg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Veronica_info p {
+    margin: 0px;
+}
+
+.VeronicaMovieContainer:hover > .Veronica {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.VeronicaMovieContainer:hover > .Veronica #Veronica_info {
+    opacity: 1;
+}
+
+/* --------------------------------Veronica movie card end--------------------- */
+
+/* -------------------------------Misery movie card --------------------- */
+
+.Misery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Miseryfront,
+#Misery_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Miseryfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/5/52/Misery_%281990_film_poster%29.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Misery_info {
+    height: 280px;
+    background-image: url(https://image.tmdb.org/t/p/original/23Y65uWaVMpqfbZTN3CT0aei4D5.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Misery_info p {
+    margin: 0px;
+}
+
+.MiseryMovieContainer:hover > .Misery {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.MiseryMovieContainer:hover > .Misery #Misery_info {
+    opacity: 1;
+}
+
+/* --------------------------------Misery movie card end--------------------- */
+
+/* -------------------------------It movie card --------------------- */
+
+.It {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Itfront,
+#It_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Itfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#It_info {
+    height: 280px;
+    background-image: url(https://media.vanityfair.com/photos/59b00a448f880b1dd8acba4a/1:1/w_1029,h_1029,c_limit/IT-Movie-Review.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#It_info p {
+    margin: 0px;
+}
+
+.ItMovieContainer:hover > .It {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ItMovieContainer:hover > .It #It_info {
+    opacity: 1;
+}
+
+/* --------------------------------It movie card end--------------------- */
+
+/* -------------------------------TheHouseNextDoor movie card --------------------- */
+
+.TheHouseNextDoor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheHouseNextDoorfront,
+#TheHouseNextDoor_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheHouseNextDoorfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/6/68/The_House_Next_Door_-_Poster.jpg/220px-The_House_Next_Door_-_Poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheHouseNextDoor_info {
+    height: 280px;
+    background-image: url(https://mumbaimirror.indiatimes.com/thumb/61599145.cms?resizemode=4&width=400);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheHouseNextDoor_info p {
+    margin: 0px;
+}
+
+.TheHouseNextDoorMovieContainer:hover > .TheHouseNextDoor {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheHouseNextDoorMovieContainer:hover > .TheHouseNextDoor #TheHouseNextDoor_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheHouseNextDoor movie card end--------------------- */
+
+/* -------------------------------Call movie card --------------------- */
+
+.Call {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Callfront,
+#Call_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Callfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BOTdlMTg2YWEtMzkxMC00YmNmLThkZGYtYjZmN2UzYzM2ZmRlXkEyXkFqcGdeQXVyMjcxODMwMDk@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Call_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Call_poster.jpg/220px-Call_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Call_info p {
+    margin: 0px;
+}
+
+.CallMovieContainer:hover > .Call {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.CallMovieContainer:hover > .Call #Call_info {
+    opacity: 1;
+}
+
+/* --------------------------------Call movie card end--------------------- */
+
+
+/* -------------------------------Smile movie card --------------------- */
+
+.Smile {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Smilefront,
+#Smile_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Smilefront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYzczMDk1MDktMTgxNC00Zjc3LWI2YzUtZWRhNmRkZDIzZDQyXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Smile_info {
+    height: 280px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Smile_info p {
+    margin: 0px;
+}
+
+.SmileMovieContainer:hover > .Smile {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.SmileMovieContainer:hover > .Smile #Smile_info {
+    opacity: 1;
+}
+
+/* --------------------------------Smile movie card end--------------------- */
+
+/* -------------------------------TheConjuringTwo movie card --------------------- */
+
+.TheConjuringTwo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheConjuringTwofront,
+#TheConjuringTwo_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheConjuringTwofront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZjU5OWVlN2EtODNlYy00MjhhLWI0MDUtMTA3MmQ5MGMwYTZmXkEyXkFqcGdeQXVyNjE5MTM4MzY@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheConjuringTwo_info {
+    height: 280px;
+    background-image: url(https://images.moviesanywhere.com/6f33625e691a7ae1fa890705337825d5/19263390-7507-4e8c-8d0b-ed3f33bbec75.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheConjuringTwo_info p {
+    margin: 0px;
+}
+
+.TheConjuringTwoMovieContainer:hover > .TheConjuringTwo {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheConjuringTwoMovieContainer:hover > .TheConjuringTwo #TheConjuringTwo_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheConjuringTwo movie card end--------------------- */
+
+/* -------------------------------TheNun movie card --------------------- */
+
+.TheNun {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheNunfront,
+#TheNun_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheNunfront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheNun_info {
+    height: 280px;
+    background-image: url(https://resizing.flixster.com/PCe0qjSEf3QVAISG1Gm2qB-KWAA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgxZjAxZThmLTBhZWYtNGEzZi1iMjczLTk5ODFjZTNiM2EzYy53ZWJw);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheNun_info p {
+    margin: 0px;
+}
+
+.TheNunMovieContainer:hover > .TheNun {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheNunMovieContainer:hover > .TheNun #TheNun_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheNun movie card end--------------------- */
+
+/* -------------------------------Annabelle movie card --------------------- */
+
+.Annabelle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Annabellefront,
+#Annabelle_info {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#Annabellefront {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BOTQwZmQyYzEtODk5ZC00OTY3LWExMjAtYzRjNWFhNGM3MzBlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Annabelle_info {
+    height: 280px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/90/Annabelle_film_poster.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#Annabelle_info p {
+    margin: 0px;
+}
+
+.AnnabelleMovieContainer:hover > .Annabelle {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.AnnabelleMovieContainer:hover > .Annabelle #Annabelle_info {
+    opacity: 1;
+}
+
+/* --------------------------------Annabelle movie card end--------------------- */
+
+/* -------------------------------TheLastExorcism movie card --------------------- */
+
+.TheLastExorcism,.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#TheLastExorcismfront,
+#TheLastExorcism_info ,
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+#TheLastExorcismfront {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/3/39/The_Last_Exorcism_Poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#TheLastExorcism_info {
+    height: 280px;
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/f2e6c8f90c61d8a8a186b02534f818e47afa3f479ce23ff7e66f1c9b5f99ee77.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+    opacity: 0;
+    text-align: center;
+}
+
+#TheLastExorcism_info p ,
+.back p{
+    margin: 0px;
+}
+
+.TheLastExorcismMovieContainer:hover > .TheLastExorcism {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.TheLastExorcismMovieContainer:hover > .TheLastExorcism #TheLastExorcism_info {
+    opacity: 1;
+}
+
+/* --------------------------------TheLastExorcism movie card end--------------------- */
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 2rem;
+    border: none;
+}
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+.back{
+    opacity: 0;
+    text-align: center;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+.back p{
+    margin: 0px;
+    color: white;
+}
+
+.cardcontainer:hover > .card {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cardcontainer:hover > .card .back {
+    opacity: 1;
+}
+#GolmaalThreefront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/f/f4/Golmaal_3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#GolmaalThree_info{
+    background-image: url(https://rukminim2.flixcart.com/image/850/1000/jgffp8w0/movie/h/u/n/2010-dvd-sony-dadc-hindi-golmaal-3-dvd-original-imaf4nv8etazjjxc.jpeg?q=20&crop=false);
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+#Dhamaalfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/6/60/Dhamaal_2007.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Dhamaal_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYmQyNGRmMjMtM2I1Zi00OTBiLWIyMzgtZGZkODQ5MGRiN2QzXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#NoProblemfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/f/f1/No_problem_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#NoProblem_info{
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/no-problem-et00005132-24-03-2017-16-19-16.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#HeyyBabyyfront{
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/81411f3c2031ca0ad932ddd7c7bb55fa79caabe922e5a32ba70c4fc64caabf24.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#HeyyBabyy_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZTBhNzFjNTAtNWQ4OC00ZjdjLThlYjktNjQ4OTE3YjdmYjA1XkEyXkFqcGdeQXVyMzQ5MzkwMDY@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#Welcomefront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Welcome_poster_2007.jpg/220px-Welcome_poster_2007.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Welcome_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYWVkMTU2NGYtOTM3OS00NDljLWFmNTAtNzgzYjQyMzUzMDM1XkEyXkFqcGdeQXVyMjY1MjkzMjE@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#BhagamBhagfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/BhagamBhag.jpg/220px-BhagamBhag.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#BhagamBhag_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWUwOTZlNTItZDA3Zi00MmQ5LWE1MDQtZTA1Yzg3ZGIwNWU5XkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* --------card hover background css------------ */
+.bg {
+    background-color: rgba(41, 40, 40, 0.486);
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.bg p a {
+    text-decoration: none;
+}
+
+.watchbtninsidecard,
+.trailerbtninsidecard {
+    background-color: transparent;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid gray;
+    color: white;
+}
+
+.watchbtninsidecard:hover,
+.trailerbtninsidecard:hover {
+    background-color: #ffd700;
+    color: black;
+    transition: 1s;
+}
+
+#ExploreMoreButton{
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+
+}
+
+#ExploreMoreButton:hover{
+   transform: scale(1.06);
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
+footer{
+    margin: 0px 20px;
+    /* border: 2px solid white; */
+    padding: 20px 10px;
+    background-color: rgba(100, 100, 100, 0.288);
+    border-radius: 20px;
+}
+.footer-icon a{
+    font-size: 30px;
+    color: white;
+    margin-right: 30px;
+}
+.footer-icon a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #FFD700;
+    /* margin-right: 30px; */
+}
+#footerLogo{
+    height: 90px;
+    width: 180px;
+}
+.copyrightsection{
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ------------------Ligin Page--------------------------- */
+.Container{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(images/loginbg.jpeg);
+    background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.loginContaier{
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.783);
+    text-align: center;
+    color: white;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  /* box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset;
+-webkit-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset;
+-moz-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset; */
+box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
+-webkit-box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
+-moz-box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
+    
+}
+
+.verifybtn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+#SignInUsernameInput,
+#SignInPaswardInput,
+#SignUpUsernameInput,
+#SignupPasswardInput,
+#SignUpEmailInput,
+#SignupRe-enterPasswardInput,
+#SignUpOTPInput,
+#SignUpMobileOTPInput,
+#VerifyOTPPageInput,
+#SetPasswardInput,
+#VerifyPasswardInput{
+    color: white;
+    background:transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+#SignUpOTPInput,
+#SignUpMobileOTPInput{
+    display: none;
+}
+
+#EmailOTP,
+#MobileOTP{
+    display: none;
+}
+::placeholder{
+    color: white;
+}
+
+#EmailOTP:checked ~ #SignUpOTPInput{
+  display: inline;
+}
+#MobileOTP:checked ~ #SignUpMobileOTPInput{
+    display: inline;
+  }
+
+#LoginBtnSignInBtn{
+    width: 100px;
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+
+}
+.LoginBgImg{
+    width: 100%;
+    height: 100%;
+    /* filter: blur(2px); */
+}
+
+#LoginBtnSignInBtn:hover{
+    transform: scale(1.06);
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.6s;
+}
+
+#Loginlogo{
+    width: 170px;
+    height: 75px;
+    /* height: 80px; */
+}
+
+#LanguagesList{
+    font-size: 28px;
+    width: 200px;
+    margin-top: 20px;
+}
+#LanguagesList input,
+#SelectGenres input{
+    height: 20px;
+    width: 20px;
+}
+
+.StartStreamingBtn{
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+
+}
+.StartStreamingBtn:hover{
+    transform: scale(1.06);
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
+
+#SelectLanguage,
+#SelectGenres{
+    background-image: url(images/SelectLanguageBackgroundImg.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.EnglishBox, 
+.MarathiBox,
+.HindiBox,
+.KannadaBox,
+.TamilBox,
+.TeleguBox,
+.MalayalamBox{
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#English:checked ~ .EnglishBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Marathi:checked ~ .MarathiBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Hindi:checked ~ .HindiBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Kannada:checked ~ .KannadaBox{
+    background-color: #FFD700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Tamil:checked ~ .TamilBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Telegu:checked ~ .TeleguBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Malayalam:checked ~ .MalayalamBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+.English,
+.Marathi,
+.Hindi,
+.Kannada,
+.Tamil,
+.Telegu,
+.Malayalam,
+.CheckBox{
+    display: none;
+}
+
+
+#SelectLanguageNextBtn{
+    width: 180px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+#SelectLanguageNextBtn:hover{
+    transform: scale(1.06);
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
+
+.ActionBox,
+.HorrorBox,
+.ThrillerBox,
+.RomanticBox,
+.DramaBox,
+.Science_FictionBox,
+.ComedyBox,
+.DocumentaryBox,
+.AdventureBox,
+.MysteryBox{
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#Action:checked ~ .ActionBox{
+    background-color: #ffd700    ;
+    color: black;
+    transition: 0.5s;
+}
+
+#Horror:checked ~ .HorrorBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Thriller:checked ~ .ThrillerBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Romantic:checked ~ .RomanticBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Drama:checked ~ .DramaBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Science_Fiction:checked ~ .Science_FictionBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Comedy:checked ~ .ComedyBox{
+    background-color: #FFD700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Documentary:checked ~ .DocumentaryBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Adventure:checked ~ .AdventureBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+#Mystery:checked ~ .MysteryBox{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.5s;
+}
+
+.TrailerContainer{
+    /* width: 650px; */
+    /* min-width: 200px; */
+    /* height: 350px; */
+    /* background-color:transparent; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: none;
+}
+
+
+.fa-circle-xmark{
+    font-size: 30px;
+    /* float: right; */
+    /* margin-top: -40px; */
+    /* margin-right: -20px; */
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #FFD700;
+}
+.nav-link.active{
+    color: red;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    /* height: 50px; */
+}
+.dropdown-item{
+    color: white;
+    background-color: black;
+}
+.nav-item{
+    background-color: black;
+    margin-right: 20px;
+}
+
+.dropdown-item:hover{
+    color: #ffd700;
+    background-color: black;
+}
+.navbar-toggler{
+    display: flex;
+    justify-content: end;
+}
+.dropdown{
+    background-color: black;
+}
+.dropdown-menu{
+    padding: 0px;
+}
+
+.introvideo{
+    width: 100vw;
+    height:100vh;
+}
+#movieSection{
+    width: 100VW;
+    height: 100vh;
+    position: relative;
+    /* position: absolute; */
+    /* background-image: linear-gradient(0deg,black 25%, hwb(0 50% 50% / -93)); */
+}
+.mainMovieContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#mainMovieImg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.movies_logo{
+    position:absolute;
+    height: 100%;
+    /* height: auto; */
+    background-image: linear-gradient(90deg,black 10%, hwb(0 50% 50% / -93));
+    width: 340px;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 50px;
+
+}
+#MoviesLogo{
+    height: 200px;
+}
+#TrailerButton{
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 20px;
+    transition: 1s;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+#TrailerButton:hover {
+    background-color: #ffd700;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    color: black;
+    transition: 1S;
+}
+
+
+/* ----------------Category Page CSS-------------------------- */
+.CategoryContainer a{
+    color: white;
+    text-decoration: none;
+    width: 130px;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 65px;
+    
+}
+.CategoryContainer{
+    /* height: 200vh; */
+    /* width: 70vw; */
+    margin-top: 100px;
+}
+
+
+
+/* ------------------------------------------------ */
+.imgcontainer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+  }
+  .imgcontainer .slides-row{
+    display: flex;
+    height: 100%;
+  }
+  .imgcontainer .slides-row .slide{
+    min-width: 100%;
+  }
+  .imgcontainer .slides-row .slide img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  .imagesSelector{
+    position: absolute;
+    /* bottom: 5px; */
+    z-index: 3;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* position: absolute; */
+    bottom: 10%;
+    right: 5%;
+  } 
+  .imgcontainer .imagesSelector .indicators{
+    height: 140px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid;
+    /* display: inline-block; */
+  }
+
+  .imgcontainer .imagesSelector .indicators img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .imgcontainer .imagesSelector .active{
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+  .next , .prev{
+    padding:7px 10px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.579);
+    margin:35px 10px;
+
+  }
+  #content {
+width: 350px;
+position: absolute;
+top: 10%;
+right: 10px;
+height: auto;
+font-size: 18px;
+font-weight: bold;
+text-align: right;
+color: white;
+}
