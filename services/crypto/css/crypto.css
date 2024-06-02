@@ -39,6 +39,14 @@ body{
     display: none;
    
 }
+#headerlogo{
+    height: 40px;
+    position: absolute;
+    top: 25%;
+    left: 2.5%;
+    opacity: .8;
+    transition: all .4s ease;
+}
 
 .main-menu:hover .main-menubox{
     display: block;
@@ -109,7 +117,7 @@ body{
 .Animatex-text span::before{
     content: "Wallet";
     color: rgb(64, 173, 223);
-    animation: words 20s infinite;
+    animation: words 15s infinite;
 }
 
 .Animatex-text span::after{
@@ -118,34 +126,31 @@ body{
     width: 0;
     height: 100%;
     background-color: transparent;
-    border-left: 2px solid rgb(64, 173, 223);
+    /* border-left: 2px solid rgb(64, 173, 223); */
     right: -8px;
-    animation: cursor 1s infinite;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 
-@keyframes cursor {
-    to{
-        border-left: 2px solid #071d27;
-    }
-}
+
 
 @keyframes words{
     0%,20%{
-
+        content: "Wallet";
     }
-    0%,20%{
-        
+    21%,40%{
+        content: "Ethereum";
     }
-    0%,20%{
-        
+    41%,60%{
+        content: "Private Blockchain";
     }
-    0%,20%{
-        
+    61%,80%{
+        content: "Exchange";
     }
-    0%,20%{
-        
+    81%,100%{
+        content: "NFT Marketplace";
     }
 }
+
 
 
 /* ********Containt********* */
@@ -176,8 +181,9 @@ body{
 }
 .Title {
     font-size: 45px;
-    color: white;
+    color: rgb(64, 173, 223);
     text-align: center;
+    font-weight: 500;
 }
 .information_AtBigWig p{
     font-size: 21px;
@@ -186,7 +192,7 @@ body{
 .border{
         width: 60px;
         height: 2px;
-        background: #fbfcfa;
+        background-color: rgb(64, 173, 223);
         margin: 26px auto;
     
     }
@@ -209,4 +215,385 @@ body{
 .discription{
     color: white;
     width: 400px;
+}
+
+
+
+/* *********** journey************ */
+.journey{
+    background-color: #0a2a38;
+    color: white;
+    padding-top: 150px;
+    height: 80vh;
+    width: 100vw;
+    clip-path: polygon(0% 15%, 11% 20%, 16% 21%, 53% 14%, 85% 19%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+    /* clip-path: polygon(0% 15%, 11% 20%, 26% 24%, 53% 14%, 76% 21%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%); */
+}
+#footer_title{
+    font-size: 60px;
+}
+#footer_info{
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* ************ Services Cards*************** */
+.ServicesCards{
+    width: 410px;
+    height: 320px;
+    border-radius: 80px 0px 80px 0px;
+    border: 1px solid rgb(85, 84, 84);
+    text-align: center;
+    color: white;
+    padding: 8px 5px;
+    margin: 0px 20px 20px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    clip-path: circle(0.0% at 0 100%);
+    background-color: #0e3a4f;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    
+}
+.servicesCardInner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.ServicesCards i{
+    font-size: 30px; 
+    color: #c4a9cf;
+}
+#titlecards{
+    font-size: 23px;
+    color: rgb(64, 173, 223);
+    font-weight: 500;
+}
+.servicesCardInner p{
+    width: 95%;
+    padding: 2px 5px;
+    font-size: 17px;
+    /* font-style: italic; */
+}
+.ServicesCards button{
+    border: none;
+    height: 35px;
+    width: 130px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(33, 33, 73);
+}
+.ServicesCards button:hover{
+    border: 1px solid rgb(104, 102, 102);
+    background-color: #0e3a4f;
+}
+
+.ServicesCards:hover > .circle{
+    transition: 0.8s;
+    clip-path: circle(137.5% at 2% 96%);
+}
+
+/* **********************Prcosses************************************************* */
+
+.processcontainer{
+    padding: 30px 20px;
+}
+
+#ProcessTitleInfo{
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.processesContainer{
+    padding: 25px 30px;
+
+}
+.processDscription{
+    width: 600px;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.ProcesssesInfo{
+    margin-bottom: 100px;
+}
+#processesimages{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;  
+}
+#processesimagetitle{
+    font-size: 23px;
+}
+
+
+
+/* ------------------------Wallet Development page css--------------------------------- */
+
+
+.walletFirstSection, 
+.exchangeFirstSection,
+.blockdevelopmentFirstSection,
+.blockframeworkFirstSection,
+.EnterprisesFirstSection,
+.smartcontractFirstSection,
+.AssetFirstSection,
+.NFTFirstSection{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left top,#022a3b, #071d27);
+}
+
+#walletpagedescription, 
+#exchangepagedescription,
+#blockdevelopmentpagedescription,
+#blockframeworkpagedescription,
+#Enterprisespagedescription,
+#smartcontractpagedescription,
+#Assetpagedescription,
+#NFTpagedescription{
+    color: white;
+    width: 600px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#wallettitle,
+#exchangetitle,
+#blockdevelopmenttitle,
+#blockframeworktitle,
+#Enterprisestitle,
+#smartcontracttitle,
+#Assettitle,
+#NFTtitle{
+    font-weight: bold;
+    font-size: 50px;
+    color:rgb(64, 173, 223) ;
+}
+
+#walletpagesideimg,
+#exchangepagesideimg,
+#blockdevelopmentpagesideimg,
+#blockframeworkpagesideimg,
+#Enterprisespagesideimg,
+#smartcontractpagesideimg,
+#Assetpagesideimg,
+#NFTpagesideimg{
+    width: 450px;
+}
+
+/* ------wallet development info section--------- */
+.walletdevelopmentinfoContainer,
+.assestsinfoContainer,
+.blockchaindevelopmentinfoContainer,
+.blockframeworkinfoContainer{
+    padding: 30px 10px;
+}
+
+#wallet_info_sideimg,
+#assests_sideimg,
+#blockchaindevelopment_info_sideimg,
+#blockframework_info_sideimg{
+    width: 400px;
+}
+
+#walletdevelopmentinfo,
+#blockchaindevelopmentinfo,
+#blockframeworkinfo{
+    width: 500px;
+    color:white;
+    font-size: 18px;
+    letter-spacing:1px;
+    text-align:justify;
+}
+
+#walletdevelopmentinfotitle,
+#assetsinfotitle,
+#blockchaindevelopmentinfotitle,
+#blockframeworkinfotitle{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(64, 173, 223);
+}
+
+
+/* ------wallet development services css--------- */
+.walletdevelopmentservicescontainer,
+.AssetTokenizationservicescontainer,
+.blockchaindevelopmentservicescontainer{
+    padding:30px 20px;
+
+}
+
+.walletservices{
+    padding: 20px 10px;
+}
+
+/* -------keyfeatures css------------ */
+.WhyChooseUscontainer{
+    padding: 30px 25px;
+}
+
+.whychooseuscard{
+    width: 350px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+    background-color: #022a3b;
+    border-radius: 20px;
+    margin: 0px 5px 10px 5px;
+}
+
+.whychooseuscard i{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.whychooseuscard p{
+    font-size: 20px;
+}
+
+
+
+
+/* ----------------------------Technology Slider --------------------------- */
+
+.technologysliderContainer{
+    padding: 30px 0px;
+}
+
+.slider1 {
+    height: 150px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+ 
+
+  .slider2 {
+    height: 150px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    /* place-items: center; */
+    align-items: center;
+    overflow: hidden;
+
+  }
+
+  .slide-track {
+  position: absolute;
+    display: flex;
+    z-index: 1;
+    width: calc(150px * 18);
+    animation: scroll 50s linear infinite;
+    
+  }
+  #box-inner{
+      height: 150px;
+      width: 150px;
+      background-color: #022a3b;
+      display: grid;
+      place-items: center;
+      float: left;
+      border-radius: 10px;
+      color: #2DAFEC;
+      text-align: center;
+      z-index: 2;
+  }
+  #box{
+      
+      z-index: 2;
+      margin-left: 150px;
+  }
+
+  #box-inner1{
+      height: 150px;
+      width: 150px;
+      background-color: #2DAFEC;
+      display: grid;
+      place-items: center;
+      float: left;
+      border-radius: 10px;
+      color: #022a3b;
+      text-align: center;
+      z-index: 2;
+  }
+
+  .tech_title{
+    font-size: 1.5rem;
+  }
+
+  .technology_slide {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+  }
+
+  #mot {
+    width: 80%;
+    aspect-ratio: 1;
+  }
+
+  #mot:hover {
+    transition: 0.4s;
+    transform: scale(1.09);
+    filter: none;
+  }
+
+
+
+  .slider1:hover > .slide-track{
+    animation-play-state: paused;
+  }
+
+  .slider2:hover > .slide-track{
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(calc(-150px * 9));
+      
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @media only screen and (max-width: 550px){
+    #box-inner{
+      width: 170px;
+    }
+    #box-inner1{
+      width: 170px;
+    }
+    #box {
+    margin-left: 170px;
+  }
 }
