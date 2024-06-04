@@ -29,6 +29,7 @@ body{
     background-color: #040404b4;
     color: #f8f5f5;
     position: fixed;
+    z-index: 4;
 }
 #mainNav a{
     text-decoration: none;
@@ -597,3 +598,370 @@ body{
     margin-left: 170px;
   }
 }
+
+
+
+
+
+  /* Contact Us */
+
+  .contact_us {
+    width: 100%;
+    /* padding: 10px; */
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+  }
+
+  #contact-usForm {
+    position: fixed;
+    top: 0%;
+    z-index: 5;
+    display: none;
+  }
+
+  .box-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 1100px;
+    margin: auto;
+    margin-top: 35px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #071d27;
+  }
+
+  .info-wrapper {
+    width: 35%;
+    height: 571px;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #071d27;
+    color: white;
+  }
+
+  .color {
+    color: #2DAFEC;
+    transition: all .4s ease;
+  }
+
+  .info-wrapper h2 {
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #071d27;
+  }
+
+  .info-wrapper h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+  }
+
+  .info-wrapper .contact-icons {
+    list-style: none;
+    margin: 60px 0px;
+  }
+
+  .contact-icons li {
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .contact-icons li i {
+    background-color: #2DAFEC;
+    color: black;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .contact-icons li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .contact-icons li a:hover {
+    color: #2DAFEC;
+
+  }
+
+  #whatsapp_btn {
+
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2DAFEC;
+    background-color: white;
+
+    /* width: 150px; */
+  }
+
+  #whatsapp_btn:hover {
+    background-color: #2DAFEC;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .form-wrapper {
+    width: 65%;
+    float: right;
+    padding: 40px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: #ecf0f3;
+  }
+
+  .form-wrapper h2 {
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+  }
+
+  .form-fields {
+    display: table;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+  }
+
+  .form-fields input,
+  .form-fields textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+  }
+
+  .form-fields select {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #3a5f6f;
+    padding: 10px 0px;
+    width: 100%;
+  }
+
+  .form-fields textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .form-group {
+    width: 46%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbc3d1, inset -8px -8px 8px white;
+  }
+
+  .form-fields .form-group:last-child {
+    width: 96%;
+  }
+
+  .submit-btn {
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background: #2DAFEC;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+  }
+
+  .submit-btn:hover {
+    background: #ecf0f3;
+    color: #2DAFEC;
+  }
+
+  ::placeholder {
+    color: #3a5f6f;
+  }
+
+
+
+  @media only screen and (max-width:767px) {
+    #contact-usForm{
+      height: 100vh;
+      overflow-y: scroll;
+    }
+    .box-wrapper {
+      width: 100%;
+    }
+
+    .info-wrapper,
+    .form-wrapper {
+      width: 100%;
+      height: inherit;
+      float: none;
+    }
+
+    .info-wrapper {
+      border-radius: 30px 30px 0px 0px;
+    }
+
+    .form-wrapper {
+      border-radius: 0px 0px 30px 30px;
+    }
+
+    .form-group {
+      width: 100%;
+      float: none;
+      margin: 25px 0px;
+    }
+
+    .form-fields .form-group:last-child,
+    .submit-btn {
+      width: 100%;
+
+    }
+
+    .submit-btn {
+      margin: 10px 0px;
+    }
+    
+  }
+
+  /* Contact Us End*/
+
+
+  /* Footer CSS Start */
+  footer {
+    background-color: #071d27;
+    color: white;
+    padding: 15px 10px 5px 10px;
+    width: 98%;
+    border-radius: 20px;
+    border: 1px solid rgb(49, 49, 49);
+  }
+
+  .footer_container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #footer_logo {
+    width: 200px;
+  }
+
+  #subscribeinput::placeholder {
+    color: rgb(32, 32, 32);
+  }
+
+  .footer_container div ul {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0px;
+  }
+
+  .footer_container div ul li {
+    padding: 3px 0px;
+  }
+  .Footer_div{
+    text-align: left;
+    padding: 5px 20px;
+  }
+
+  #subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+   
+  }
+
+  #subscribe input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+
+  }
+
+  #subscribe button {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  #subscribe button:hover {
+    color: #2DAFEC;
+  }
+
+  .socialmedia_icon {
+    display: flex;
+    margin-top: 10px;
+
+  }
+
+  .socialmedia_icon a {
+    background-color: white;
+    font-size: 30px;
+    margin: 5px 8px;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+
+  .socialmedia_icon a:hover {
+    transform: translateY(-5px);
+
+    background-color: #2DAFEC;
+    transition: 0.6s;
+  }
+
+  #contact_details {
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 550px){
+      .footer_container{
+        justify-content: center;
+      }
+      .Footer_div{
+    text-align: center;
+    width: 330px;
+    /* padding: 5px 20px; */
+  }
+  .line{
+   margin: auto;
+  }
+
+    }
+  /* Footer CSS End  */
